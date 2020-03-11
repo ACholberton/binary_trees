@@ -14,16 +14,16 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	{
 		return (NULL);
 	}
-	// checks if malloc was succesfull//
+	/* checks if malloc was succesfull */
 	node->n = value;
 	node->parent = parent;
-	// assigns value to the root//
+	/* assigns value to the root */
 
 	if (parent->right)
 	{
 		parent->right->parent = node;
 	}
-	// added new node to the right child//
+	/* added new node to the right child */
 	node->left = NULL;
 	node->right = parent->right;
 	parent->right = node;

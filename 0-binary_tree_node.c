@@ -15,11 +15,12 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	if (node == NULL)
 		return (NULL);
-//checks if the node was malloc//
+
+/* checks if the node was malloc */
 
 	node->left = NULL;
 	node->right = NULL;
-//sets the value to the node//
+/* sets the value to the node */
 	node->n = value;
 	node->parent = parent;
 
