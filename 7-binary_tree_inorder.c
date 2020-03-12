@@ -2,7 +2,7 @@
 
 /**
  *binary_tree_inorder - function that goes through a binary tree using in-order
- traversal
+ *traversal
  *@tree: is the binary tree
  *@func: is a pointer
  *Return Nothing
@@ -10,7 +10,7 @@
 
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL)
+	if (tree == NULL || func == NULL)
 		return;
 
 	/* checks if the tree exists */
