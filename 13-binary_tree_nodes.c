@@ -16,8 +16,8 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 
 	if (tree->left != NULL || tree->right != NULL)
 		return (binary_tree_nodes(tree->right) +
-			binary_tree_nodes(tree->left)+ 1);
-	/* checks for nodes that have 1 child */ 
+			binary_tree_nodes(tree->left) + 1);
+	/* checks for nodes that have 1 child */
 	else
-		return(0);
+		return (0);
 }
