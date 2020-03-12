@@ -5,7 +5,6 @@
  * traversal
  * @tree: is the binary tree
  * @func: is a pointer
- * Return - Nothing
  */
 
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
