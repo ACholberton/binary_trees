@@ -11,7 +11,7 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 	if (node == NULL)
 		return (0);
 	/*Checks if node exists*/
-	else if (node->parent == NULL)
+	if (node->parent == NULL)
 		return (1);
 	/*checks if the next node in the tree is null*/
 	else

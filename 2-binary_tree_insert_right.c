@@ -1,7 +1,10 @@
 #include "binary_trees.h"
 
 /**
- *
+ *binary_tree_insert_right - adds a new node at the right side of the tree
+ *@parent: is the root
+ *@value: is the value of the node
+ *Return: the newly added node
  */
 
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
