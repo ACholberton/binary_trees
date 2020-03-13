@@ -24,7 +24,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	counter_2 = (binary_tree_is_full(tree->right) + 1);
 
 	if (counter_1 == 1 && counter_2 == 1)
-		return(1);
+		return (1);
 	else
 		return (0);
 }
