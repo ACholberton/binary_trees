@@ -8,8 +8,8 @@
 
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-	int counter_1 = 0;
-	int counter_2 = 0;
+	int counter_1;
+	int counter_2;
 
 	/* check if the tree exists */
 	if (tree == NULL)
