@@ -8,23 +8,17 @@
 
 int binary_tree_is_full(const binary_tree_t *tree)
 {
-	int counter_1 = 0;
-	int counter_2 = 0;
-
 	/* check if the tree exists */
 	if (tree == NULL)
 		return (0);
 
 	/* checks if the left side and right side are NULL */
-	if (tree->left == NULL || tree->right == NULL)
-		return (0);
-
-
-	counter_1 = (binary_tree_is_full(tree->left) + 1);
-	counter_2 = (binary_tree_is_full(tree->right) + 1);
-
-	if (counter_1 == 1 && counter_2 == 1)
+	if (tree->left == NULL && tree->right == NULL)
 		return (1);
-	else
-		return (0);
+
+
+	if (tree->left != NULL && tree->right != NULL)
+		return (binary_tree_is_full(tree->left) &&
+			binary_tree_is_full(tree->right));
+	return (0);
 }
